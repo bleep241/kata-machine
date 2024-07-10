@@ -22,6 +22,7 @@ export default class Stack<T> { //Last in First Out or LiFO data structure
 
     if (!this.head) {
       this.head = newNode;
+      return;
     }
 
     newNode.next = this.head; // E node's next now points to previous head
